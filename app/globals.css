@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #fff; color: #1f2328; line-height: 1.5; font-size: 15px; }
+a { color: #1f2328; }
+.bar { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; border-bottom: 1px solid #e5e7eb; }
+.brand { font-weight: 600; text-decoration: none; }
+.right { display: flex; gap: 12px; align-items: center; color: #57606a; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 24px; }
+h1 { font-size: 22px; margin: 0 0 16px; }
+h2 { font-size: 16px; margin: 28px 0 8px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
+th { font-weight: 600; color: #57606a; font-size: 13px; }
+button, .btn { font: inherit; padding: 6px 14px; border: 1px solid #1f2328; background: #1f2328; color: #fff; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
+button.ghost, .btn.ghost { background: #fff; color: #1f2328; border-color: #d0d7de; }
+button:disabled { opacity: .5; cursor: default; }
+input, textarea { font: inherit; padding: 6px 8px; border: 1px solid #d0d7de; border-radius: 6px; width: 100%; background: #fff; }
+input[type=file] { padding: 4px; }
+label { display: block; margin: 14px 0 4px; font-weight: 500; }
+.muted { color: #57606a; }
+.err { color: #a40e26; }
+.ok { color: #1a7f37; }
+.card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-top: 12px; }
+.note { white-space: pre-wrap; }
+.login { max-width: 340px; margin: 14vh auto; padding: 0 16px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.tag { font-size: 12px; border: 1px solid #d0d7de; border-radius: 10px; padding: 1px 8px; color: #57606a; white-space: nowrap; }
+.tag.late { color: #a40e26; border-color: #e5b9c0; }
+.files { margin: 4px 0; padding-left: 18px; }
+.grade-in { width: 80px; }
+
+/* ===== trắc nghiệm ===== */
+.nav { display: flex; gap: 16px; align-items: center; }
+.nav a { text-decoration: none; color: #57606a; }
+.qnav { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+.qn { min-width: 38px; padding: 4px 8px; background: #fff; color: #1f2328; border: 1px solid #d0d7de; }
+.qn.done { background: #eef0f2; }
+.qn.cur { background: #1f2328; color: #fff; border-color: #1f2328; }
+.opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; margin: 6px 0; padding: 10px 12px; background: #fff; color: #1f2328; border: 1px solid #d0d7de; border-radius: 6px; }
+.opt.sel { border-color: #1f2328; background: #eef0f2; }
+.qimg { max-width: 100%; max-height: 420px; display: block; margin: 8px 0; border: 1px solid #eee; }
+.thumb { max-height: 80px; display: block; margin: 6px 0; border: 1px solid #eee; }
+.plain { list-style: none; padding: 0; margin: 6px 0; }
+.plain li { padding: 2px 0; }
+li.right { color: #1a7f37; font-weight: 600; }
+li.wrong { color: #a40e26; }
+.opt-in { display: flex; gap: 8px; align-items: center; margin: 6px 0; }
+.opt-in input[type=radio] { width: auto; }
+
+/* ===== bài làm dạng text ===== */
+.code { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; font-size: 13px; }
+pre.code { white-space: pre-wrap; word-break: break-word; background: #f6f8fa; border: 1px solid #e5e7eb; border-radius: 6px; padding: 10px; max-height: 420px; overflow: auto; margin: 8px 0; }
+textarea.code { line-height: 1.45; tab-size: 4; }
+details summary { cursor: pointer; }
